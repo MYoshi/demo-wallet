@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Solana Web3 Wallet Demo
+
+This project is a modern, accessible, and modular Solana wallet application built with React and TypeScript. It demonstrates how a web3.js-based wallet can interact with the Solana blockchain, focusing on developer experience and best practices.
+
+## Features
+
+- **Connect to Solana devnet or testnet**
+- **View wallet address and SOL balance**
+- **Request airdrop of test SOL**
+- **Send SOL to another address**
+- **Sign messages with your wallet**
+- **Copy wallet address (with accessibility features)**
+- **Accessible, keyboard-friendly UI**
+- **Modular components and custom hooks**
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### Running the App
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Connect your wallet (Phantom, Solflare, etc.) or use a local keypair.
+- Use the UI to request airdrops, send SOL, or sign messages on devnet/testnet.
+- All actions are performed on the selected Solana network (no real funds at risk).
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `src/components/` – UI components and wallet features
+- `src/hooks/` – Custom React hooks for wallet logic
+- `src/app/` – Main app and layout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Accessibility & Best Practices
+- Semantic HTML and ARIA attributes
+- Keyboard navigation support
+- Clear focus states and tooltips
+- Modular, maintainable code
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Why This Project?
+This app is designed as a reference for developers learning how to build web3.js applications on Solana. It demonstrates:
+- How to structure a wallet UI
+- How to use Solana web3.js for common wallet actions
+- How to build accessible and user-friendly dapps
